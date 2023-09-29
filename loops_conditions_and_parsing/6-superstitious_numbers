@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
 #Superstitious numbers
+#!/usr/bin/env bash
+#6-superstitious_numbers
 count=1
-
-while [ $count -le 20 ]; do
-    case $count in
-        4)
-            echo "$count and then bad luck from China"
-            ;;
-        9)
-            echo "$count and then bad luck from Japan"
-            ;;
-        17)
-            echo "$count and then bad luck from Italy"
-            ;;
-        *)
-            echo $count
-            ;;
-    esac
-
-    count=$((count + 1))
-done
+while [ $count -le 20 ]
+do
+case $count in
+	4)
+echo -e "4\nbad luck from China"
+;;
+9)
+echo -e "9\nbad luck from Japan"
+;;
+17)
+echo -e "17\nbad luck from Italy"
+;;
+*)
+echo "$count"
+esac
+((count++))
+done 
